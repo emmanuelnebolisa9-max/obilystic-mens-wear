@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OBILYSTIC MENS WEAR | Premium Men's Fashion</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="main-header">
+
+        <a href="#home" class="brand">
+            <i class="fa-solid fa-crown crown"></i>
+
+            <div class="brand-text">
+                <h1>OBILYSTIC</h1>
+                <p>MENS WEAR</p>
+            </div>
+        </a>
+
+        <p class="brand-motto">
+            QUALITY <span>|</span> STYLE <span>|</span> CONFIDENCE
+        </p>
+
+        <a
+            href="https://wa.me/2348029059590"
+            class="header-whatsapp"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Contact OBILYSTIC MENS WEAR on WhatsApp"
+            style="display:inline-flex;align-items:center;gap:8px;color:#25D366;text-decoration:none;font-weight:700;white-space:nowrap;"
+        >
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            <span>WhatsApp Us</span>
+        </a>
+
+        <a href="#cart-section" class="header-cart" aria-label="Shopping cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+        </a>
+
+    </header>
+
+
+    <!-- NAVIGATION -->
+    <nav class="main-nav">
+
+        <div class="nav-links">
+            <a href="#home" class="active">HOME</a>
+            <a href="#shirts">SHIRTS</a>
+            <a href="#jeans">JEANS</a>
+            <a href="#cart-section">MY CART</a>
+            <a href="#contact">CONTACT US</a>
+        </div>
+
+        <form id="search-form" class="search-box">
+            <input
+                type="search"
+                id="search-input"
+                placeholder="Search products..."
+                aria-label="Search products"
+            >
+
+            <button type="submit" aria-label="Search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+
+    </nav>
+
+
+    <!-- HERO BANNER -->
+    <section id="home" class="hero">
+
+        <div class="hero-decoration hero-decoration-left"></div>
+
+        <div class="hero-content">
+
+            <p class="hero-label">PREMIUM MEN'S FASHION</p>
+
+            <h2>
+                DRESS WELL.<br>
+                <span>LOOK SHARP.</span><br>
+                BE CONFIDENT.
+            </h2>
+
+            <p class="hero-description">
+                Discover quality men's shirts and jeans
+                for every occasion. Look good. Feel great.
+            </p>
+
+            <a href="#shirts" class="shop-button">
+                SHOP NOW
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="./images/fashion-model.png"
+                alt="Model wearing premium men's fashion"
+            >
+        </div>
+
+        <div class="hero-brand">
+            <i class="fa-solid fa-crown"></i>
+            <h3>OBILYSTIC</h3>
+            <p>MENS WEAR</p>
+            <span>Style<br>Never<br>Fades</span>
+        </div>
+
+        <div class="hero-decoration hero-decoration-right"></div>
+
+    </section>
+
+
+    <!-- FEATURED PRODUCTS -->
+    <section class="featured-section">
+
+        <div class="section-heading">
+            <span></span>
+            <h2>FEATURED PRODUCTS</h2>
+            <span></span>
+        </div>
+
+        <p class="section-subtitle">OUR BEST SELLERS</p>
+
+        <div class="products-container">
+
+            <!-- WHITE SHIRT -->
+            <article class="product" id="shirts" data-name="White Shirt">
+
+                <img
+                    src="./images/white-shirt.png"
+                    alt="White Men's Shirt"
+                    class="product-image"
+                >
+
+                <h3>White Shirt</h3>
+
+                <p class="price">₦15,000</p>
+
+                <button
+                    class="add-to-cart"
+                    onclick="addToCart('White Shirt', 15000)"
+                >
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    ADD TO CART
+                </button>
+
+            </article>
+
+
+            <!-- CASUAL SHIRT -->
+            <article class="product" data-name="Casual Shirt">
+
+                <img
+                    src="./images/casual-shirt.png"
+                    alt="Casual Men's Shirt"
+                    class="product-image"
+                >
+
+                <h3>Casual Shirt</h3>
+
+                <p class="price">₦13,000</p>
+
+                <button
+                    class="add-to-cart"
+                    onclick="addToCart('Casual Shirt', 13000)"
+                >
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    ADD TO CART
+                </button>
+
+            </article>
+
+
+            <!-- BLUE JEANS -->
+            <article class="product" id="jeans" data-name="Blue Denim Jeans">
+
+                <img
+                    src="./images/blue-jeans.png"
+                    alt="Blue Denim Jeans"
+                    class="product-image"
+                >
+
+                <h3>Blue Denim Jeans</h3>
+
+                <p class="price">₦20,000</p>
+
+                <button
+                    class="add-to-cart"
+                    onclick="addToCart('Blue Denim Jeans', 20000)"
+                >
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    ADD TO CART
+                </button>
+
+            </article>
+
+
+            <!-- BLACK JEANS -->
+            <article class="product" data-name="Black Denim Jeans">
+
+                <img
+                    src="./images/black-jeans.png"
+                    alt="Black Denim Jeans"
+                    class="product-image"
+                >
+
+                <h3>Black Denim Jeans</h3>
+
+                <p class="price">₦22,000</p>
+
+                <button
+                    class="add-to-cart"
+                    onclick="addToCart('Black Denim Jeans', 22000)"
+                >
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    ADD TO CART
+                </button>
+
+            </article>
+
+        </div>
+
+        <p id="no-results" hidden>No matching products found.</p>
+
+    </section>
+
+
+    <!-- SHOPPING CART -->
+    <section id="cart-section" class="cart-section">
+
+        <div class="cart-title">
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <div>
+                <h2>YOUR SHOPPING CART</h2>
+                <p id="cart-status">Your cart is empty.</p>
+            </div>
+        </div>
+
+        <div id="cart-items"></div>
+
+        <div class="cart-summary">
+            <h3 id="cart-total">Total: ₦0</h3>
+
+            <button id="clear-cart" onclick="clearCart()">
+                CLEAR CART
+            </button>
+
+            <button id="order-button" onclick="placeOrder()">
+                PLACE ORDER
+            </button>
+        </div>
+
+        <p id="order-message"></p>
+
+    </section>
+
+
+    <!-- STORE BENEFITS -->
+    <section class="store-benefits">
+
+        <div class="benefit">
+            <i class="fa-solid fa-truck-fast"></i>
+            <div>
+                <h3>FAST DELIVERY</h3>
+                <p>Across Nigeria</p>
+            </div>
+        </div>
+
+        <div class="benefit">
+            <i class="fa-solid fa-shield-halved"></i>
+            <div>
+                <h3>SECURE PAYMENTS</h3>
+                <p>Your safety, our priority</p>
+            </div>
+        </div>
+
+        <div class="benefit">
+            <i class="fa-solid fa-rotate"></i>
+            <div>
+                <h3>EASY RETURNS</h3>
+                <p>Hassle-free service</p>
+            </div>
+        </div>
+
+        <div class="benefit">
+            <i class="fa-solid fa-headset"></i>
+            <div>
+                <h3>24/7 SUPPORT</h3>
+                <p>We're always here</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer id="contact">
+
+        <div class="footer-brand">
+            <i class="fa-solid fa-crown"></i>
+            <span>OBILYSTIC MENS WEAR</span>
+        </div>
+
+        <p>Quality clothing for the modern man.</p>
+
+        <div class="social-links">
+            <a href="#contact" aria-label="Facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a href="#contact" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://wa.me/2348029059590" target="_blank"
+               rel="noopener noreferrer" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+
+        <p class="copyright">
+            © 2026 OBILYSTIC MENS WEAR. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        let cartItems = [];
+
+        function addToCart(name, price) {
+
+            cartItems.push({
+                name: name,
+                price: price
+            });
+
+            displayCart();
+        }
+
+
+        function displayCart() {
+
+            const cartContainer =
+                document.getElementById("cart-items");
+
+            const totalElement =
+                document.getElementById("cart-total");
+
+            const countElement =
+                document.getElementById("cart-count");
+
+            const statusElement =
+                document.getElementById("cart-status");
+
+            cartContainer.innerHTML = "";
+
+            if (cartItems.length === 0) {
+
+                statusElement.textContent = "Your cart is empty.";
+
+            } else {
+
+                statusElement.textContent =
+                    cartItems.length + " item(s) in your cart.";
+
+                cartItems.forEach(function(item, index) {
+
+                    const product = document.createElement("p");
+
+                    product.textContent =
+                        item.name + " - ₦" +
+                        item.price.toLocaleString() + " ";
+
+                    const removeButton =
+                        document.createElement("button");
+
+                    removeButton.textContent = "Remove";
+
+                    removeButton.onclick = function() {
+
+                        cartItems.splice(index, 1);
+
+                        displayCart();
+                    };
+
+                    product.appendChild(removeButton);
+
+                    cartContainer.appendChild(product);
+                });
+            }
+
+            const total = cartItems.reduce(function(sum, item) {
+                return sum + item.price;
+            }, 0);
+
+            totalElement.textContent =
+                "Total: ₦" + total.toLocaleString();
+
+            countElement.textContent = cartItems.length;
+        }
+
+
+        function clearCart() {
+
+            cartItems = [];
+
+            displayCart();
+
+            document.getElementById("order-message").textContent = "";
+        }
+
+
+    function placeOrder() {
+
+    const message =
+        document.getElementById("order-message");
+
+    if (cartItems.length === 0) {
+
+        message.textContent =
+            "Please add a product to your cart first.";
+
+        return;
+    }
+
+    const phoneNumber = "2348029059590";
+
+    let orderMessage = "Hello OBILYSTIC MENS WEAR! 👋\n\n";
+    orderMessage += "I would like to order the following items:\n\n";
+
+    cartItems.forEach(function(item, index) {
+
+        orderMessage +=
+            (index + 1) + ". " +
+            item.name + " - ₦" +
+            item.price.toLocaleString() + "\n";
+
+    });
+
+    const total = cartItems.reduce(function(sum, item) {
+        return sum + item.price;
+    }, 0);
+
+    orderMessage += "\nTotal: ₦" + total.toLocaleString();
+    orderMessage += "\n\nPlease let me know the next steps. Thank you!";
+
+    const whatsappURL =
+        "https://wa.me/" +
+        phoneNumber +
+        "?text=" +
+        encodeURIComponent(orderMessage);
+
+    window.open(whatsappURL, "_blank");
+
+    message.textContent =
+        "Your order message is ready to send through WhatsApp!";
+}
+
+        document.getElementById("search-form").addEventListener(
+            "submit",
+            function(event) {
+
+                event.preventDefault();
+
+                const searchTerm =
+                    document.getElementById("search-input")
+                    .value.trim().toLowerCase();
+
+                const products =
+                    document.querySelectorAll(".product");
+
+                let matches = 0;
+
+                products.forEach(function(product) {
+
+                    const productName =
+                        product.dataset.name.toLowerCase();
+
+                    const isMatch =
+                        productName.includes(searchTerm);
+
+                    product.style.display =
+                        isMatch ? "" : "none";
+
+                    if (isMatch) {
+                        matches++;
+                    }
+                });
+
+                document.getElementById("no-results").hidden =
+                    matches !== 0;
+            }
+        );
+
+
+        displayCart();
+
+    </script>
+
+</body>
+
+</html>
